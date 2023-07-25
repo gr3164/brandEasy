@@ -69,8 +69,20 @@
     }
 
     &__subtitle {
+        position: relative;
         color: var(--secondary);
         margin-bottom: 25px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -14px;
+            width: 64px;
+            height: 3px;
+            background-color: var(--secondary);
+            transform: translateX(-50%);
+        }
     }
 
     &__title {
