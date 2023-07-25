@@ -1304,8 +1304,19 @@ summary::-webkit-details-marker {
   border-bottom: 1px solid #eaeaea;
 }
 .slider__subtitle {
+  position: relative;
   color: var(--secondary);
   margin-bottom: 25px;
+}
+.slider__subtitle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  width: 64px;
+  height: 3px;
+  background-color: var(--secondary);
+  transform: translateX(-50%);
 }
 .slider__title {
   color: var(--primaryDark);
