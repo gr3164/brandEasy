@@ -1,0 +1,119 @@
+.product {
+    &__slider {
+    }
+    &__cards {
+        padding: 128px 15px;
+    }
+}
+.slider {
+    &__img {
+        position: relative;
+        background-color: #f7f7f7;
+    }
+
+    &__img-inner {
+        position: relative;
+        min-height: 777px;
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 51%;
+            height: 93%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            // object-position: center top bottom;
+        }
+    }
+
+    &__pagination-prev,
+    &__pagination-next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        width: 47px;
+        height: 47px;
+        background-color: rgba(42, 42, 42, 0.15);
+        transform: translateY(-50%);
+        transition: all 0.2s ease;
+        &:hover svg {
+            fill: var(--secondary);
+        }
+    }
+    &__pagination-prev {
+        left: 0;
+    }
+
+    &__pagination-next {
+        right: 0;
+    }
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 65px 0;
+        background-color: var(--neutral);
+        text-align: center;
+    }
+
+    &__content {
+        max-width: 555px;
+        padding-bottom: 65px;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    &__subtitle {
+        color: var(--secondary);
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        color: var(--primaryDark);
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+
+    &__text {
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+
+    &__price {
+        font-size: 24px;
+        color: var(--secondary);
+    }
+
+    &__sort {
+        margin-top: 65px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+
+        gap: 23px;
+        margin-top: 48px;
+        color: var(--secondary);
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: transparent;
+        padding: 15px 24px;
+        min-width: 212px;
+        border: 1px solid var(--secondary);
+        transition: all 0.2s ease;
+
+        &:hover {
+            transition: box-shadow ease-in-out 0.1s;
+            -webkit-box-shadow: 0 0 5px var(--secondary);
+            box-shadow: 0 0 5px var(--secondary);
+        }
+
+        & .icon-card:before {
+            font-size: 25px;
+        }
+    }
+}

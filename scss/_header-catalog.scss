@@ -1,0 +1,39 @@
+.header-catalog {
+    padding: 60px 0;
+    background-color: #f8f3f4;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: var(--secondary);
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+.breadcrumb {
+    ul {
+        display: flex;
+        // gap: 16px;
+        color: var(--secondary);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    ul li + li:before {
+        padding: 8px;
+        color: #636363;
+        content: "/\00a0";
+    }
+
+    ul li a {
+        color: #636363;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

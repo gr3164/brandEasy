@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__inner">
+                <div class="header__left">
+                    <a href="index.html"><img src="img/header/logo.png" alt="logo"></a>
+                    <a href="#">
+                        <svg class="icon" width="26" height="26">
+                            <use xlink:href="sprite.svg#search"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__right">
+
+                    <div class="header__menu-toggle">
+                        <input id="menu-toggle" type="checkbox" />
+                        <label class='menu-button-container' for="menu-toggle">
+                            <svg class="icon" width="32" height="23">
+                                <use xlink:href="sprite.svg#menu"></use>
+                            </svg>
+                        </label>
+                        <nav class="menu">
+                            <h2 class="menu__title">MENU</h2>
+                            <ul class="menu__tabs">
+                                <li class="menu__tab tab-menu">
+                                    <h3 class="tab-menu__title"><a href="#">MAN</a></h3>
+                                    <ul class="tab-menu__row">
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Accessories</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Bags</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Denim</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">T-Shirts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__tab tab-menu">
+                                    <h3 class="tab-menu__title"><a href="#">WOMAN</a></h3>
+                                    <ul class="tab-menu__row">
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Accessories</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Jackets & Coats</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Polos</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">T-Shirts</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Shirts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__tab tab-menu">
+                                    <h3 class="tab-menu__title"><a href="#">KIDS</a></h3>
+                                    <ul class="tab-menu__row">
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Accessories</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Jackets & Coats</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Polos</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">T-Shirts</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Shirts</a>
+                                        </li>
+                                        <li class="tab-menu__item">
+                                            <a href="#" class="tab-menu__link">Bags</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+
+                    <a href="#">
+                        <svg class="icon" width="29" height="29">
+                            <use xlink:href="sprite.svg#reg"></use>
+                        </svg>
+                    </a>
+                    <a class="header-card" href="#">
+                        <svg class="icon" width="32" height="29">
+                            <use xlink:href="sprite.svg#cart"></use>
+                        </svg>
+                        <span class="header__card-counter">5</span>
+                    </a>
+
+
+                </div>
+
+            </div>
+        </header>
+        <main class="main">
+            <header class="header-catalog">
+                <div class="container header-catalog__inner">
+                    <h2 class="header-catalog__title title">NEW ARRIVALS </h2>
+                    <nav class="breadcrumb">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">men</a></li>
+                            <li>new ARRIVALS</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="catalog">
+                <div class="container catalog__inner">
+                    <div class="catalog__filter filter">
+                        <div class="filter__menu menu-filter">
+                            <details class="menu-filter__details menu-filter__details--one">
+                                <summary class="menu-filter__summary"><span>FILTER</span> <svg width="15" height="10">
+                                        <use xlink:href="sprite.svg#filter-btn"></use>
+                                    </svg></summary>
+                                <div class="menu-filter__tabs">
+                                    <details class="menu-filter__details menu-filter__details--two" open>
+                                        <summary class="menu-filter__summary-tab"><span>BRAND</span></summary>
+                                        <ul class="menu-filter__list">
+                                            <li class="menu-filter__item"><a class="menu-filter__link"
+                                                    href="#">Accessories</a></li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link" href="#">Bags</a>
+                                            </li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link"
+                                                    href="#">Denim</a>
+                                            </li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link" href="#">Hoodies
+                                                    &
+                                                    Sweatshirts</a></li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link" href="#">Jackets
+                                                    &
+                                                    Coats</a></li>
+
+                                        </ul>
+                                    </details>
+                                    <details class="menu-filter__details menu-filter__details--two">
+                                        <summary class="menu-filter__summary-tab"><span>man</span> </summary>
+                                        <ul class="menu-filter__list">
+                                            <li class="menu-filter__item"><a class="menu-filter__link"
+                                                    href="#">Accessories</a></li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link" href="#">Bags</a>
+                                            </li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link"
+                                                    href="#">Denim</a>
+                                            </li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link" href="#">Hoodies
+                                                    &
+                                                    Sweatshirts</a></li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link" href="#">Jackets
+                                                    &
+                                                    Coats</a></li>
+
+                                        </ul>
+                                    </details>
+                                    <details class="menu-filter__details menu-filter__details--two">
+                                        <summary class="menu-filter__summary-tab"><span> wooman</span></summary>
+                                        <ul class="menu-filter__list">
+                                            <li class="menu-filter__item"><a class="menu-filter__link"
+                                                    href="#">Accessories</a></li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link" href="#">Bags</a>
+                                            </li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link"
+                                                    href="#">Denim</a>
+                                            </li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link" href="#">Hoodies
+                                                    &
+                                                    Sweatshirts</a></li>
+                                            <li class="menu-filter__item"><a class="menu-filter__link" href="#">Jackets
+                                                    &
+                                                    Coats</a></li>
+
+                                        </ul>
+                                    </details>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="filter__sort sort">
+                            <details class="sort__details">
+                                <summary class="sort__summary"><span>TRENDING NOW</span> <svg width="11" height="6">
+                                        <use xlink:href="sprite.svg#arrow-bottom"></use>
+                                    </svg></summary>
+                            </details>
+                            <details class="sort__details sort__details-size">
+                                <summary class="sort__summary"><span>size</span> <svg width="11" height="6">
+                                        <use xlink:href="sprite.svg#arrow-bottom"></use>
+                                    </svg></summary>
+                                <ul class="sort__list sort__size-list">
+                                    <li class="sort__item sort__size-item">
+                                        <input id="sort-size1" class="sort__input" type="checkbox">
+                                        <label for="sort-size1">Xs</label>
+                                    </li>
+                                    <li class="sort__item  sort__size-item">
+                                        <input id="sort-size2" class="sort__input" type="checkbox">
+                                        <label for="sort-size2">s</label>
+                                    </li>
+                                    <li class="sort__item  sort__size-item">
+                                        <input id="sort-size3" class="sort__input" type="checkbox">
+                                        <label for="sort-size3">m</label>
+                                    </li>
+                                    <li class="sort__item sort__size-item">
+                                        <input id="sort-size4" class="sort__input" type="checkbox">
+                                        <label for="sort-size4">l</label>
+                                    </li>
+                                </ul>
+                            </details>
+                            <details class="sort__details">
+                                <summary class="sort__summary"><span>price</span> <svg width="11" height="6">
+                                        <use xlink:href="sprite.svg#arrow-bottom"></use>
+                                    </svg></summary>
+                            </details>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="catalog__cards grid">
+                        <div class="item-card">
+                            <div class="item-card__img"><img src="img/fetured-items/01.jpg" alt="card"><button
+                                    class="item-card__btn "><span class="icon-card"></span> Add to
+                                    Cart</button></div>
+                            <div class="item-card__content">
+                                <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
+                                        X M'O
+                                        CAPSULE</a></h4>
+                                <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <span class="item-card__price">$52.00</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-card__img"><img src="img/catalog/02.jpg" alt="card"><button
+                                    class="item-card__btn "><span class="icon-card"></span> Add to
+                                    Cart</button></div>
+                            <div class="item-card__content">
+                                <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
+                                        X M'O
+                                        CAPSULE</a></h4>
+                                <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <span class="item-card__price">$52.00</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-card__img"><img src="img/fetured-items/03.jpg" alt="card"><button
+                                    class="item-card__btn "><span class="icon-card"></span> Add to
+                                    Cart</button></div>
+                            <div class="item-card__content">
+                                <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
+                                        X M'O
+                                        CAPSULE</a></h4>
+                                <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <span class="item-card__price">$52.00</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-card__img"><img src="img/catalog/05.jpg" alt="card"><button
+                                    class="item-card__btn "><span class="icon-card"></span> Add to
+                                    Cart</button></div>
+                            <div class="item-card__content">
+                                <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
+                                        X M'O
+                                        CAPSULE</a></h4>
+                                <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <span class="item-card__price">$52.00</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-card__img"><img src="img/catalog/06.jpg" alt="card"><button
+                                    class="item-card__btn "><span class="icon-card"></span> Add to
+                                    Cart</button></div>
+                            <div class="item-card__content">
+                                <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
+                                        X M'O
+                                        CAPSULE</a></h4>
+                                <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <span class="item-card__price">$52.00</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-card__img"><img src="img/catalog/07.jpg" alt="card"><button
+                                    class="item-card__btn "><span class="icon-card"></span> Add to
+                                    Cart</button></div>
+                            <div class="item-card__content">
+                                <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
+                                        X M'O
+                                        CAPSULE</a></h4>
+                                <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <span class="item-card__price">$52.00</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-card__img"><img src="img/catalog/08.jpg" alt="card"><button
+                                    class="item-card__btn "><span class="icon-card"></span> Add to
+                                    Cart</button></div>
+                            <div class="item-card__content">
+                                <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
+                                        X M'O
+                                        CAPSULE</a></h4>
+                                <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <span class="item-card__price">$52.00</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-card__img"><img src="img/catalog/09.jpg" alt="card"><button
+                                    class="item-card__btn "><span class="icon-card"></span> Add to
+                                    Cart</button></div>
+                            <div class="item-card__content">
+                                <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
+                                        X M'O
+                                        CAPSULE</a></h4>
+                                <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <span class="item-card__price">$52.00</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-card__img"><img src="img/fetured-items/01.jpg" alt="card"><button
+                                    class="item-card__btn "><span class="icon-card"></span> Add to
+                                    Cart</button></div>
+                            <div class="item-card__content">
+                                <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
+                                        X M'O
+                                        CAPSULE</a></h4>
+                                <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <span class="item-card__price">$52.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="catalog__pagination">
+                        <ul>
+                            <li><a href="#!">
+                                    <svg width="9" height="20">
+                                        <use xlink:href="sprite.svg#arrow-left"></use>
+                                    </svg>
+                                </a></li>
+                            <li><a class="active-pagination" href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li>.....</li>
+                            <li><a href="#">20</a></li>
+                            <li><a href="#!">
+                                    <svg width="9" height="20">
+                                        <use xlink:href="sprite.svg#arrow-right"></use>
+                                    </svg>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="benefit">
+                <div class="container benefit__inner">
+                    <ul class="benefit__items">
+                        <li class="benefit__item">
+                            <img src="img/benefit/icon-1.svg" alt="icon-benefit" width="46px" height="40px">
+                            <h4 class="benefit__title">Free Delivery</h4>
+                            <p class="benefit__text">Worldwide delivery on all. Authorit tively morph next-generation
+                                innov
+                                tion with extensive models.</p>
+                        </li>
+
+                        <li class="benefit__item">
+                            <img src="img/benefit/icon-2.svg" alt="icon-benefit" width="40px" height="40px">
+                            <h4 class="benefit__title">Sales & discounts</h4>
+                            <p class="benefit__text">Worldwide delivery on all. Authorit tively morph next-generation
+                                innov
+                                tion with extensive models.</p>
+                        </li>
+
+                        <li class="benefit__item">
+                            <img src="img/benefit/icon-3.svg" alt="icon-benefit" width="48px" height="40px">
+                            <h4 class="benefit__title">Quality assurance</h4>
+                            <p class="benefit__text">Worldwide delivery on all. Authorit tively morph next-generation
+                                innov
+                                tion with extensive models.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subscribe" style="background-image: url(img/subscribe/bg.jpg)">
+                <div class="container subscribe__inner">
+                    <div class="subscribe__left">
+                        <div class="subscribe__left-img"><img src="img/subscribe/01.png" alt="photo"></div>
+                        <p class="subscribe__left-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar
+                            purus condimentum “</p>
+                    </div>
+                    <div class="subscribe__right">
+                        <h2 class="subscribe__right-title">SUBSCRIBE
+                        </h2>
+                        <p class="subscribe__right-text">FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form id="myform" class="subscribe__form" action="#">
+                            <input class="subscribe__form-input" type="email" placeholder="Enter Your Email">
+                            <button class="subscribe__btn" type="submit" form="myform">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container footer__inner">
+                <div class="footer__text">© 2022 Brand All Rights Reserved.</div>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <svg class="footer__social-img" width="11" height="16">
+                                <use xlink:href="sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <svg class="footer__social-img" width="16" height="15">
+                                <use xlink:href="sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <svg class="footer__social-img" width="13" height="16">
+                                <use xlink:href="sprite.svg#pre"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <svg class="footer__social-img" width="17" height="14">
+                                <use xlink:href="sprite.svg#twiter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
