@@ -1,6 +1,8 @@
 .header-catalog {
     padding: 60px 0;
+
     background-color: #f8f3f4;
+
     &__inner {
         display: flex;
         align-items: center;
@@ -8,32 +10,40 @@
     }
 
     &__title {
-        color: var(--secondary);
         font-family: Lato;
         font-size: 24px;
         font-weight: 400;
+
+        color: var(--secondary);
     }
 }
 
 .breadcrumb {
     ul {
-        display: flex;
-        // gap: 16px;
-        color: var(--secondary);
         font-weight: 700;
+
+        display: flex;
+
         text-transform: uppercase;
+
+        // gap: 16px;
+
+        color: var(--secondary);
     }
 
     ul li + li:before {
         padding: 8px;
-        color: #636363;
+
         content: "/\00a0";
+
+        color: #636363;
     }
 
     ul li a {
-        color: #636363;
         font-family: Lato;
         font-size: 14px;
         font-weight: 300;
+
+        color: #636363;
     }
 }

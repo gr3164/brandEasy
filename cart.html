@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -119,100 +119,74 @@
         <main class="main">
             <header class="header-catalog">
                 <div class="container header-catalog__inner">
-                    <h2 class="header-catalog__title title">NEW ARRIVALS </h2>
-                    <nav class="breadcrumb">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="catalog.html">men</a></li>
-                            <li>new ARRIVALS</li>
-                        </ul>
-                    </nav>
+                    <h2 class="header-catalog__title title">SHOPPING CART</h2>
                 </div>
             </header>
-            <div class="product__slider slider">
-                <div class="slider__img ">
-                    <div class="slider__img-inner container">
-                        <img src="img/product/slide-01.jpg" alt="slide">
+            <div class="cart">
+                <div class="container cart__inner">
+                    <div class="cart__left">
+                        <div class="cart__cards cards">
+                            <div class="cards__item card">
+                                <div class="card__img"><img src="img/cart/card-01.jpg" alt="card-img"></div>
+                                <div class="card__content">
+                                    <h2 class="card__title"><a class="card__title-link" href="product.html">MANGO PEOPLE
+                                            T-SHIRT</a></h2>
+                                    <ul class="card__list">
+                                        <li class="card__item">Price:<span class="card__price"> $300</span> </li>
+                                        <li class="card__item">Color:<span> Red</span></li>
+                                        <li class="card__item">Size: <span> Xl</span> </li>
+                                        <li class="card__item card__item_quantity">Quantity: <input
+                                                class="card__input-quantity" type="number" min="1" maxlength="2"
+                                                value="1">
+                                        </li>
+                                    </ul>
+                                    <button class="card__close" type="button">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="sprite.svg#close-card"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cards__item card">
+                                <div class="card__img"><img src="img/cart/card-02.jpg" alt="card-img"></div>
+                                <div class="card__content">
+                                    <h2 class="card__title"><a class="card__title-link" href="product.html">MANGO PEOPLE
+                                            T-SHIRT</a></h2>
+                                    <ul class="card__list">
+                                        <li class="card__item">Price:<span class="card__price"> $300</span> </li>
+                                        <li class="card__item">Color:<span> Red</span></li>
+                                        <li class="card__item">Size: <span> Xl</span> </li>
+                                        <li class="card__item card__item_quantity">Quantity: <input
+                                                class="card__input-quantity" type="number" min=1 max="999" value="1">
+                                        </li>
+                                    </ul>
+                                    <button class="card__close" type="button">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="sprite.svg#close-card"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__btns">
+                            <button class="cart__btn btn-cart">CLEAR SHOPPING CART</button>
+                            <a href="catalog.html" class="cart__btn btn-cart">CONTINUE SHOPPING</a>
+                        </div>
                     </div>
-                    <a href="#" class="slider__pagination-prev">
-                        <svg width="13" height="21">
-                            <use xlink:href="sprite.svg#arrow-left"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="slider__pagination-next">
-                        <svg width="13" height="21">
-                            <use xlink:href="sprite.svg#arrow-right"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="slider__descr container">
-                    <div class="slider__content">
-                        <h4 class="slider__subtitle">WOMEN COLLECTION</h4>
-                        <h3 class="slider__title"><a href="#">MOSCHINO CHEAP AND CHIC</a></h3>
-                        <p class="slider__text">Compellingly actualize fully researched processes before proactive
-                            outsourcing. Progressively syndicate collaborative architectures before cutting-edge
-                            services. Completely visualize parallel core competencies rather than exceptional portals.
-                        </p>
-                        <div class="slider__price">$561</div>
-                    </div>
-                    <div class="slider__sort sort">
-                        <details class="sort__details">
-                            <summary class="sort__summary"><span>CHOOSE COLOR</span> <svg width="11" height="6">
-                                    <use xlink:href="sprite.svg#arrow-bottom"></use>
-                                </svg></summary>
-                        </details>
-                        <details class="sort__details">
-                            <summary class="sort__summary"><span>CHOOSE SIZE</span> <svg width="11" height="6">
-                                    <use xlink:href="sprite.svg#arrow-bottom"></use>
-                                </svg></summary>
-                        </details>
-                        <details class="sort__details">
-                            <summary class="sort__summary"><span>QUANTITY</span> <svg width="11" height="6">
-                                    <use xlink:href="sprite.svg#arrow-bottom"></use>
-                                </svg></summary>
-                        </details>
-                    </div>
-                    <button class="slider__btn"><span class="icon-card"></span>Add to Cart</button>
-                </div>
-            </div>
-            <div class="product__cards grid container">
-                <div class="item-card">
-                    <div class="item-card__img"><img src="img/fetured-items/01.jpg" alt="card"><button
-                            class="item-card__btn "><span class="icon-card"></span> Add to
-                            Cart</button></div>
-                    <div class="item-card__content">
-                        <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
-                                X M'O
-                                CAPSULE</a></h4>
-                        <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <span class="item-card__price">$52.00</span>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item-card__img"><img src="img/catalog/02.jpg" alt="card"><button
-                            class="item-card__btn "><span class="icon-card"></span> Add to
-                            Cart</button></div>
-                    <div class="item-card__content">
-                        <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
-                                X M'O
-                                CAPSULE</a></h4>
-                        <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <span class="item-card__price">$52.00</span>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item-card__img"><img src="img/fetured-items/03.jpg" alt="card"><button
-                            class="item-card__btn "><span class="icon-card"></span> Add to
-                            Cart</button></div>
-                    <div class="item-card__content">
-                        <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
-                                X M'O
-                                CAPSULE</a></h4>
-                        <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <span class="item-card__price">$52.00</span>
+                    <div class="cart__right">
+                        <div class="cart__adress">SHIPPING ADRESS</div>
+                        <form id="myform" class="cart__form form" action="#">
+                            <input class="form__adress" type="text" placeholder="Bangladesh" required>
+                            <input class="form__adress" type="text" placeholder="State" required>
+                            <input class="form__adress" type="text" placeholder="Postcode / Zip" required>
+                            <button class="form__btn btn-cart btn-cart btn-cart_min" type="button">GET A QUOTE</button>
+                        </form>
+                        <div class="cart__buy buy-cart">
+                            <div class="buy-cart__sub-total">SUB TOTAL <span>$900</span></div>
+                            <div class="buy-cart__grand-total">GRAND TOTAL <span>$900</span></div>
+                            <button class="buy-cart__btn btn-cart btn-cart_reverse" type="submit" form="myform">PROCEED
+                                TO CHECKOUT</button>
+                        </div>
                     </div>
                 </div>
             </div>
