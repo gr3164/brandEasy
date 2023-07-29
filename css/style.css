@@ -621,6 +621,16 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .header {
   background-color: var(--primaryLight);
 }
