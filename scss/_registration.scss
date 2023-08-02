@@ -1,0 +1,156 @@
+.registration {
+    padding: 64px 0px 96px 0px;
+
+    &__inner {
+        display: flex;
+
+        gap: 30px;
+    }
+
+    &__form {
+    }
+
+    &__loyalty {
+        margin-left: 100px;
+    }
+}
+
+.form-reg {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    min-width: 360px;
+
+    gap: 20px;
+
+    & p {
+        font-size: 16px;
+
+        color: var(--primaryLight);
+    }
+
+    &__input {
+        display: block;
+
+        min-width: 100%;
+        padding: 16px;
+
+        border: 1px solid #a4a4a4;
+
+        &:focus {
+            border: 1px solid var(--secondary);
+            box-shadow: 0 0 5px var(--secondary);
+        }
+    }
+
+    &__input::placeholder {
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 300;
+
+        color: #b1b1b1;
+    }
+
+    & input[type="radio"] {
+        display: none;
+    }
+
+    & input[type="radio"]:checked + label::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        width: 13px;
+        height: 13px;
+        background-color: var(--secondary);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__radio-box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 10px 0;
+    }
+
+    &__radio {
+        position: relative;
+        cursor: pointer;
+        padding-left: 27px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: 0;
+            width: 17px;
+            height: 17px;
+            border: 1px solid #a4a4a4;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+
+    &__password-help {
+        font-size: 13px;
+
+        color: #b1b1b1;
+    }
+
+    &__btn {
+        font-size: 14px;
+        font-weight: 400;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 167px;
+        margin-top: 20px;
+        padding: 16px;
+
+        transition: all 0.2s ease;
+
+        color: var(--neutral);
+        background-color: var(--secondary);
+
+        gap: 20px;
+
+        & svg {
+            fill: var(--neutral);
+        }
+
+        &:hover {
+            box-shadow: 0 0 10px var(--secondary);
+        }
+    }
+}
+
+.loyalty-reg {
+    display: flex;
+    flex-direction: column;
+    color: var(--primaryDark);
+    gap: 20px;
+    &__title {
+        font-size: 24px;
+    }
+
+    &__text {
+        font-size: 24px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        font-size: 24px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}

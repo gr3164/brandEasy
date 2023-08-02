@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -119,100 +119,73 @@
         <main class="main">
             <header class="page-head">
                 <div class="container page-head__inner">
-                    <h2 class="page-head__title title">NEW ARRIVALS </h2>
-                    <nav class="breadcrumb">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="catalog.html">men</a></li>
-                            <li>new ARRIVALS</li>
-                        </ul>
-                    </nav>
+                    <h2 class="page-head__title title">registration</h2>
                 </div>
             </header>
-            <div class="product__slider slider">
-                <div class="slider__img ">
-                    <div class="slider__img-inner container">
-                        <img src="img/product/slide-01.jpg" alt="slide">
-                    </div>
-                    <a href="#" class="slider__pagination-prev">
-                        <svg width="13" height="21">
-                            <use xlink:href="sprite.svg#arrow-left"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="slider__pagination-next">
-                        <svg width="13" height="21">
-                            <use xlink:href="sprite.svg#arrow-right"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="slider__descr container">
-                    <div class="slider__content">
-                        <h4 class="slider__subtitle">WOMEN COLLECTION</h4>
-                        <h3 class="slider__title"><a href="#">MOSCHINO CHEAP AND CHIC</a></h3>
-                        <p class="slider__text">Compellingly actualize fully researched processes before proactive
-                            outsourcing. Progressively syndicate collaborative architectures before cutting-edge
-                            services. Completely visualize parallel core competencies rather than exceptional portals.
-                        </p>
-                        <div class="slider__price">$561</div>
-                    </div>
-                    <div class="slider__sort sort">
-                        <details class="sort__details">
-                            <summary class="sort__summary"><span>CHOOSE COLOR</span> <svg width="11" height="6">
-                                    <use xlink:href="sprite.svg#arrow-bottom"></use>
-                                </svg></summary>
-                        </details>
-                        <details class="sort__details">
-                            <summary class="sort__summary"><span>CHOOSE SIZE</span> <svg width="11" height="6">
-                                    <use xlink:href="sprite.svg#arrow-bottom"></use>
-                                </svg></summary>
-                        </details>
-                        <details class="sort__details">
-                            <summary class="sort__summary"><span>QUANTITY</span> <svg width="11" height="6">
-                                    <use xlink:href="sprite.svg#arrow-bottom"></use>
-                                </svg></summary>
-                        </details>
-                    </div>
-                    <button class="slider__btn"><span class="icon-card"></span>Add to Cart</button>
-                </div>
-            </div>
-            <div class="product__cards grid container">
-                <div class="item-card">
-                    <div class="item-card__img"><img src="img/fetured-items/01.jpg" alt="card"><button
-                            class="item-card__btn "><span class="icon-card"></span> Add to
-                            Cart</button></div>
-                    <div class="item-card__content">
-                        <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
-                                X M'O
-                                CAPSULE</a></h4>
-                        <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <span class="item-card__price">$52.00</span>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item-card__img"><img src="img/catalog/02.jpg" alt="card"><button
-                            class="item-card__btn "><span class="icon-card"></span> Add to
-                            Cart</button></div>
-                    <div class="item-card__content">
-                        <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
-                                X M'O
-                                CAPSULE</a></h4>
-                        <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <span class="item-card__price">$52.00</span>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item-card__img"><img src="img/fetured-items/03.jpg" alt="card"><button
-                            class="item-card__btn "><span class="icon-card"></span> Add to
-                            Cart</button></div>
-                    <div class="item-card__content">
-                        <h4 class="item-card__title"><a class="item-card__title-link" href="product.html">ELLERY
-                                X M'O
-                                CAPSULE</a></h4>
-                        <p class="item-card__text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <span class="item-card__price">$52.00</span>
+            <div class="registration">
+                <div class="container registration__inner">
+                    <form action="#" class="registration__form form-reg">
+                        <p>Your Name</p>
+                        <input class="form-reg__input" type="text" placeholder="First Name" required>
+                        <input class="form-reg__input" type="text" placeholder="Last Name" required>
+
+                        <div class="form-reg__radio-box">
+                            <input id="rad1" name="radio" type="radio">
+                            <label class="form-reg__radio" for="rad1">Male</label>
+                            <input id="rad2" name="radio" type="radio">
+                            <label class="form-reg__radio" for="rad2">Female</label>
+                        </div>
+
+                        <p>Login details</p>
+                        <input class="form-reg__input" type="email" placeholder="Email" required>
+                        <input class="form-reg__input" type="password" placeholder="Password" required>
+                        <label class="form-reg__password-help" for="">Please use 8 or more characters, with at least 1
+                            number and a mixture of uppercase
+                            and lowercase letters</label>
+
+                        <button class="form-reg__btn" type="submit">JOIN NOW
+                            <svg width="17" height="10">
+                                <use xlink:href="sprite.svg#reg-arrow-btn"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="registration__loyalty loyalty-reg">
+                        <h4 class="loyalty-reg__title">LOYALTY HAS ITS PERKS</h4>
+                        <p class="loyalty-reg__text">Get in on the loyalty program where you can earn points and unlock
+                            serious perks. Starting
+                            with these as soon as you join:</p>
+                        <ul class="loyalty-reg__list">
+                            <li class="loyalty-reg__item">
+                                <svg width="20" height="16">
+                                    <use xlink:href="sprite.svg#checkmark"></use>
+                                </svg>
+                                15% off welcome offer
+                            </li>
+                            <li class="loyalty-reg__item">
+                                <svg width="20" height="16">
+                                    <use xlink:href="sprite.svg#checkmark"></use>
+                                </svg>
+                                Free shipping, returns and exchanges on all orders
+                            </li>
+                            <li class="loyalty-reg__item">
+                                <svg width="20" height="16">
+                                    <use xlink:href="sprite.svg#checkmark"></use>
+                                </svg>
+                                $10 off a purchase on your birthday
+                            </li>
+                            <li class="loyalty-reg__item">
+                                <svg width="20" height="16">
+                                    <use xlink:href="sprite.svg#checkmark"></use>
+                                </svg>
+                                Early access to products
+                            </li>
+                            <li class="loyalty-reg__item">
+                                <svg width="20" height="16">
+                                    <use xlink:href="sprite.svg#checkmark"></use>
+                                </svg>
+                                Exclusive offers & rewards
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
