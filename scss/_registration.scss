@@ -3,7 +3,7 @@
 
     &__inner {
         display: flex;
-
+        align-items: flex-start;
         gap: 30px;
     }
 
@@ -149,6 +149,9 @@
     }
 
     &__item {
+        & svg {
+            flex: 0 0 20px;
+        }
         display: flex;
         align-items: center;
         gap: 20px;

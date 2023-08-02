@@ -12,11 +12,9 @@
             font-size: 44px;
         }
     }
-
     .small-size {
         font-size: 22px;
     }
-
     .categories {
         &__item-link {
             min-height: 160px;
@@ -32,15 +30,55 @@
             font-size: 15px;
         }
     }
-
     .grid {
         grid-template-columns: repeat(8, 1fr);
     }
-
     .subscribe__right {
         flex-basis: auto;
         max-width: 360px;
         margin-right: 0;
+    }
+    .cart {
+        &__inner {
+            display: block;
+        }
+
+        &__btns {
+            justify-content: center;
+            gap: 50px;
+        }
+        &__left {
+            margin-bottom: 60px;
+        }
+        &__right {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 100%;
+        }
+        &__form {
+            min-width: 360px;
+        }
+    }
+    .card {
+        min-width: 100%;
+    }
+    .registration {
+        &__loyalty {
+            margin-left: 0;
+        }
+    }
+    .loyalty-reg {
+        &__title {
+            font-size: 16px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__list {
+            font-size: 16px;
+        }
     }
 }
 
@@ -109,6 +147,59 @@
             flex: 0 1 256px;
         }
     }
+
+    .filter {
+        &__sort-empty {
+            position: absolute;
+            visibility: hidden;
+            left: -999999999;
+        }
+    }
+
+    .slider {
+        &__img-inner {
+            min-height: 624px;
+            & img {
+                width: 62%;
+                height: 91%;
+            }
+        }
+
+        &__descr {
+            top: 0;
+        }
+    }
+
+    .cart {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        &__left {
+            margin-bottom: 40px;
+        }
+
+        &__form {
+            margin-bottom: 30px;
+        }
+
+        &__cards {
+            margin-bottom: 30px;
+        }
+        &__right {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .buy-cart {
+        min-width: 360px;
+    }
+}
+@media (max-width: 700px) {
+    .registration {
+        &__inner {
+            flex-wrap: wrap;
+        }
+    }
 }
 
 @media (max-width: 620px) {
@@ -147,6 +238,34 @@
     .fetured-items__btn {
         padding: 0 39px;
     }
+
+    .cart {
+        &__btns {
+            gap: 10px;
+        }
+    }
+
+    .btn-cart {
+        padding: 9px 15px;
+        font-size: 12px;
+    }
+
+    .card {
+        min-height: 240px;
+
+        &__img {
+            flex: 0 0 210px;
+            width: 210px;
+        }
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__item {
+            font-size: 14px;
+        }
+    }
 }
 
 @media (max-width: 540px) {
@@ -165,9 +284,39 @@
             grid-column: 2/12;
         }
     }
+
+    .page-head {
+        padding: 24px 0 46px 0;
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+
+    .card {
+        min-height: 206px;
+
+        &__img {
+            flex: 0 0 144px;
+            width: 144px;
+        }
+
+        &__content {
+            padding: 15px;
+        }
+
+        &__close {
+            top: 15px;
+        }
+    }
 }
 
 @media (max-width: 470px) {
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
     .grid {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -191,10 +340,77 @@
             margin-bottom: 40px;
         }
     }
+
+    .menu-filter {
+        &__summary {
+            & span {
+                display: none;
+            }
+
+            & svg {
+                width: 37px;
+                height: 25px;
+            }
+        }
+
+        &__tabs {
+            min-width: 300px;
+            padding-top: 66px;
+        }
+    }
+
+    .sort {
+        gap: 24px;
+        &__summary {
+            font-size: 12px;
+        }
+    }
+
+    .card {
+        &__content {
+            max-width: 165px;
+        }
+    }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 379px) {
+    .header-reg,
+    .header-card {
+        position: absolute;
+        visibility: hidden;
+        left: -99999999;
+    }
+
     .benefit {
         padding-bottom: 100px;
+    }
+    .sort {
+        &__summary {
+            font-size: 10px;
+        }
+    }
+    .slider {
+        &__img-inner {
+            & img {
+                width: 100%;
+                height: 73%;
+            }
+        }
+
+        &__content {
+            max-width: 326px;
+            padding-bottom: 30px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__sort {
+            margin-top: 30px;
+        }
+    }
+    .grid {
+        padding: 64px 8px;
     }
 }
