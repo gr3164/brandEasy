@@ -2022,6 +2022,10 @@ input[type=number] {
   .card__content {
     max-width: 165px;
   }
+  .form-reg {
+    max-width: 360px;
+    min-width: 100%;
+  }
 }
 @media (max-width: 379px) {
   .header-reg,
